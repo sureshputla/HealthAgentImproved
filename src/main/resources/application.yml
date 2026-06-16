@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: health-assistant
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-5-nano
+          temperature: 1
+
+server:
+  port: 8081
+
