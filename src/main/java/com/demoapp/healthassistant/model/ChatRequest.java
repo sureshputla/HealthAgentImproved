@@ -1,10 +1,14 @@
 package com.demoapp.healthassistant.model;
 
 import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * Incoming chat request from the client.
  */
+@Setter
+@Getter
 public class ChatRequest {
 
     private String sessionId;
@@ -20,20 +24,5 @@ public class ChatRequest {
         this.message = message;
     }
 
-    public String getSessionId() {
-        return sessionId;
-    }
-
-    public void setSessionId(String sessionId) {
-        this.sessionId = sessionId;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 }
 
